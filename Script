@@ -49,7 +49,7 @@ coroutine.wrap(BUTE_fake_script)()
 local function LPNDUAL_fake_script() -- LoadingFrame.LocalScript 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
-	wait(4)
+	wait(6)
 	script.Parent.Visible=false
 end
 coroutine.wrap(LPNDUAL_fake_script)()
