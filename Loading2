@@ -55,7 +55,7 @@ end
 coroutine.wrap(LPNDUAL_fake_script)()
 local function CUTUT_fake_script() -- LoadingFrame.LocalScript 
 	local script = Instance.new('LocalScript', LoadingFrame)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Hub/main/Script%20Hubbb"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Huubb/main/Script%20Huubb"))()
 	wait()
 	
 end
