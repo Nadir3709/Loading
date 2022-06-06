@@ -1,62 +1,97 @@
--- Loading...
-local LoadingScreen = Instance.new("ScreenGui")
+-- Nadir Hub Loading
+
+local LoadingScreenNew = Instance.new("ScreenGui")
 local LoadingFrame = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Inside = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-LoadingScreen.Name = "LoadingScreen"
-LoadingScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LoadingScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LoadingScreenNew.Name = "Loading Screen New"
+LoadingScreenNew.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LoadingScreenNew.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LoadingScreenNew.ResetOnSpawn = false
 
 LoadingFrame.Name = "Loading Frame"
-LoadingFrame.Parent = LoadingScreen
+LoadingFrame.Parent = LoadingScreenNew
 LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 LoadingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 LoadingFrame.BorderSizePixel = 100
 LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
 
-TextLabel.Parent = LoadingFrame
+Bar.Name = "Bar"
+Bar.Parent = LoadingFrame
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.Position = UDim2.new(0.32302478, 0, 0.563779473, 0)
+Bar.Size = UDim2.new(0, 565, 0, 83)
+
+UICorner.Parent = Bar
+
+Inside.Name = "Inside"
+Inside.Parent = Bar
+Inside.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+Inside.BorderColor3 = Color3.fromRGB(0, 255, 127)
+Inside.Size = UDim2.new(0, 0, 1, 0)
+
+UICorner_2.Parent = Inside
+
+TextLabel.Parent = LoadingScreenNew
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(0.357894719, 0, 0.41574806, 0)
-TextLabel.Size = UDim2.new(0, 476, 0, 106)
+TextLabel.Position = UDim2.new(0.384746492, 0, 0.439370066, 0)
+TextLabel.Size = UDim2.new(0, 366, 0, 59)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Loading Script"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
-TextLabel.TextSize = 94.000
+TextLabel.TextSize = 14.000
 TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextWrapped = true
 
 -- Scripts:
 
-local function BUTE_fake_script() -- TextLabel.LocalScript 
+local function WRRYXD_fake_script() -- Inside.LocalScript 
+	local script = Instance.new('LocalScript', Inside)
+
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",10)
+end
+coroutine.wrap(WRRYXD_fake_script)()
+local function FIFHMSC_fake_script() -- LoadingFrame.LocalScript 
+	local script = Instance.new('LocalScript', LoadingFrame)
+
+	wait(10)
+	script.Parent.Visible=false
+end
+coroutine.wrap(FIFHMSC_fake_script)()
+local function POAOUS_fake_script() -- LoadingFrame.LocalScript 
+	local script = Instance.new('LocalScript', LoadingFrame)
+
+	wait(8)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Huubb/main/Script%20Huubb"))()
+end
+coroutine.wrap(POAOUS_fake_script)()
+local function CTBF_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	while true do
 		script.Parent.Text = "Loading Script"
-		wait(0.25)
+		wait(1)
 		script.Parent.Text = "Loading Script."
-		wait(0.25)
+		wait(1)
 		script.Parent.Text = "Loading Script.."
-		wait(0.25)
+		wait(1)
 		script.Parent.Text = "Loading Script..."
-		wait(0.25)
+		wait(1)
 	end
 end
-coroutine.wrap(BUTE_fake_script)()
-local function LPNDUAL_fake_script() -- LoadingFrame.LocalScript 
-	local script = Instance.new('LocalScript', LoadingFrame)
+coroutine.wrap(CTBF_fake_script)()
+local function EMALE_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
-	wait(4)
+	wait(10)
 	script.Parent.Visible=false
 end
-coroutine.wrap(LPNDUAL_fake_script)()
-local function CUTUT_fake_script() -- LoadingFrame.LocalScript 
-	local script = Instance.new('LocalScript', LoadingFrame)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Huubb/main/Script%20Huubb"))()
-	wait()
-	
-end
-coroutine.wrap(CUTUT_fake_script)()
+coroutine.wrap(EMALE_fake_script)()
