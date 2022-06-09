@@ -1,32 +1,32 @@
 -- Nadir Hub Loading
 
-local LoadingScreenNew = Instance.new("ScreenGui")
+local LoadingScreen = Instance.new("ScreenGui")
 local LoadingFrame = Instance.new("Frame")
 local Bar = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Inside = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local LoadingText = Instance.new("TextLabel")
 
 --Properties:
 
-LoadingScreenNew.Name = "Loading Screen New"
-LoadingScreenNew.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LoadingScreenNew.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-LoadingScreenNew.ResetOnSpawn = false
+LoadingScreen.Name = "Loading Screen"
+LoadingScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LoadingScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 LoadingFrame.Name = "Loading Frame"
-LoadingFrame.Parent = LoadingScreenNew
-LoadingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-LoadingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LoadingFrame.BorderSizePixel = 100
-LoadingFrame.Size = UDim2.new(1, 0, 1, 0)
+LoadingFrame.Parent = LoadingScreen
+LoadingFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+LoadingFrame.BorderColor3 = Color3.fromRGB(36, 36, 36)
+LoadingFrame.BorderSizePixel = 0
+LoadingFrame.Position = UDim2.new(0.406719923, 0, 0.3975721, 0)
+LoadingFrame.Size = UDim2.new(0, 297, 0, 134)
 
 Bar.Name = "Bar"
 Bar.Parent = LoadingFrame
 Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Bar.Position = UDim2.new(0.32302478, 0, 0.563779473, 0)
-Bar.Size = UDim2.new(0, 565, 0, 83)
+Bar.Position = UDim2.new(0.0235690232, 0, 0.522388101, 0)
+Bar.Size = UDim2.new(0, 284, 0, 22)
 
 UICorner.Parent = Bar
 
@@ -38,60 +38,62 @@ Inside.Size = UDim2.new(0, 0, 1, 0)
 
 UICorner_2.Parent = Inside
 
-TextLabel.Parent = LoadingScreenNew
-TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(0.384746492, 0, 0.439370066, 0)
-TextLabel.Size = UDim2.new(0, 366, 0, 59)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Loading Script"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextWrapped = true
+LoadingText.Name = "Loading Text"
+LoadingText.Parent = LoadingScreen
+LoadingText.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+LoadingText.BorderColor3 = Color3.fromRGB(36, 36, 36)
+LoadingText.BorderSizePixel = 0
+LoadingText.Position = UDim2.new(0.411094934, 0, 0.442404985, 0)
+LoadingText.Size = UDim2.new(0, 283, 0, 33)
+LoadingText.Font = Enum.Font.SourceSans
+LoadingText.Text = "Loading Script"
+LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.TextScaled = true
+LoadingText.TextSize = 14.000
+LoadingText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.TextWrapped = true
 
 -- Scripts:
 
-local function WRRYXD_fake_script() -- Inside.LocalScript 
-	local script = Instance.new('LocalScript', Inside)
-
-	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",10)
-end
-coroutine.wrap(WRRYXD_fake_script)()
-local function FIFHMSC_fake_script() -- LoadingFrame.LocalScript 
-	local script = Instance.new('LocalScript', LoadingFrame)
-
-	wait(10)
-	script.Parent.Visible=false
-end
-coroutine.wrap(FIFHMSC_fake_script)()
-local function POAOUS_fake_script() -- LoadingFrame.LocalScript 
+local function NZEB_fake_script() -- LoadingFrame.Script Hub 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
 	wait(7)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Huubb/main/Script%20Huubb"))()
 end
-coroutine.wrap(POAOUS_fake_script)()
-local function CTBF_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
-
-	while true do
-		script.Parent.Text = "Loading Script"
-		wait(1)
-		script.Parent.Text = "Loading Script."
-		wait(1)
-		script.Parent.Text = "Loading Script.."
-		wait(1)
-		script.Parent.Text = "Loading Script..."
-		wait(1)
-	end
-end
-coroutine.wrap(CTBF_fake_script)()
-local function EMALE_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+coroutine.wrap(NZEB_fake_script)()
+local function YWQQYC_fake_script() -- LoadingFrame.Visible 
+	local script = Instance.new('LocalScript', LoadingFrame)
 
 	wait(10)
 	script.Parent.Visible=false
 end
-coroutine.wrap(EMALE_fake_script)()
+coroutine.wrap(YWQQYC_fake_script)()
+local function FYIDC_fake_script() -- Inside.LocalScript 
+	local script = Instance.new('LocalScript', Inside)
+
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",10)
+end
+coroutine.wrap(FYIDC_fake_script)()
+local function SOKOJNI_fake_script() -- LoadingText.Loading... 
+	local script = Instance.new('LocalScript', LoadingText)
+
+	while true do
+		script.Parent.Text = "Loading Script"
+		wait(0.50)
+		script.Parent.Text = "Loading Script."
+		wait(0.50)
+		script.Parent.Text = "Loading Script.."
+		wait(0.50)
+		script.Parent.Text = "Loading Script..."
+		wait(0.50)
+	end
+end
+coroutine.wrap(SOKOJNI_fake_script)()
+local function IDBMPM_fake_script() -- LoadingText.Visible 
+	local script = Instance.new('LocalScript', LoadingText)
+
+	wait(10)
+	script.Parent.Visible=false
+end
+coroutine.wrap(IDBMPM_fake_script)()
