@@ -1,21 +1,21 @@
 -- Nadir Hub Loading
 
-local LoadingScreen = Instance.new("ScreenGui")
+local LoadingScreenNew = Instance.new("ScreenGui")
 local LoadingFrame = Instance.new("Frame")
 local Bar = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Inside = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local LoadingText = Instance.new("TextLabel")
+local LoadingAndCheckingGame = Instance.new("TextLabel")
 
 --Properties:
 
-LoadingScreen.Name = "Loading Screen"
-LoadingScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LoadingScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LoadingScreenNew.Name = "Loading Screen New"
+LoadingScreenNew.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LoadingScreenNew.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 LoadingFrame.Name = "Loading Frame"
-LoadingFrame.Parent = LoadingScreen
+LoadingFrame.Parent = LoadingScreenNew
 LoadingFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 LoadingFrame.BorderColor3 = Color3.fromRGB(36, 36, 36)
 LoadingFrame.BorderSizePixel = 0
@@ -38,62 +38,140 @@ Inside.Size = UDim2.new(0, 0, 1, 0)
 
 UICorner_2.Parent = Inside
 
-LoadingText.Name = "Loading Text"
-LoadingText.Parent = LoadingScreen
-LoadingText.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-LoadingText.BorderColor3 = Color3.fromRGB(36, 36, 36)
-LoadingText.BorderSizePixel = 0
-LoadingText.Position = UDim2.new(0.411094934, 0, 0.442404985, 0)
-LoadingText.Size = UDim2.new(0, 283, 0, 33)
-LoadingText.Font = Enum.Font.SourceSans
-LoadingText.Text = "Loading Script"
-LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
-LoadingText.TextScaled = true
-LoadingText.TextSize = 14.000
-LoadingText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-LoadingText.TextWrapped = true
+LoadingAndCheckingGame.Name = "Loading And Checking Game"
+LoadingAndCheckingGame.Parent = LoadingScreenNew
+LoadingAndCheckingGame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+LoadingAndCheckingGame.BorderColor3 = Color3.fromRGB(36, 36, 36)
+LoadingAndCheckingGame.BorderSizePixel = 0
+LoadingAndCheckingGame.Position = UDim2.new(0.411094934, 0, 0.442404985, 0)
+LoadingAndCheckingGame.Size = UDim2.new(0, 283, 0, 33)
+LoadingAndCheckingGame.Font = Enum.Font.SourceSans
+LoadingAndCheckingGame.Text = "Checking Game"
+LoadingAndCheckingGame.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadingAndCheckingGame.TextScaled = true
+LoadingAndCheckingGame.TextSize = 14.000
+LoadingAndCheckingGame.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+LoadingAndCheckingGame.TextWrapped = true
 
 -- Scripts:
 
-local function NZEB_fake_script() -- LoadingFrame.Script Hub 
+local function MIUR_fake_script() -- LoadingFrame.Script Hub 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
-	wait(7)
+	wait(17)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Huubb/main/Script%20Huubb"))()
 end
-coroutine.wrap(NZEB_fake_script)()
-local function YWQQYC_fake_script() -- LoadingFrame.Visible 
+coroutine.wrap(MIUR_fake_script)()
+local function ICRBK_fake_script() -- LoadingFrame.Visible 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
-	wait(10)
+	wait(20)
 	script.Parent.Visible=false
 end
-coroutine.wrap(YWQQYC_fake_script)()
-local function FYIDC_fake_script() -- Inside.LocalScript 
+coroutine.wrap(ICRBK_fake_script)()
+local function KQDK_fake_script() -- Inside.LocalScript 
 	local script = Instance.new('LocalScript', Inside)
 
-	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",10)
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",20)
 end
-coroutine.wrap(FYIDC_fake_script)()
-local function SOKOJNI_fake_script() -- LoadingText.Loading... 
-	local script = Instance.new('LocalScript', LoadingText)
+coroutine.wrap(KQDK_fake_script)()
+local function QOMH_fake_script() -- LoadingAndCheckingGame.Checking And Loading Text 
+	local script = Instance.new('LocalScript', LoadingAndCheckingGame)
 
 	while true do
-		script.Parent.Text = "Loading Script"
-		wait(0.50)
-		script.Parent.Text = "Loading Script."
-		wait(0.50)
-		script.Parent.Text = "Loading Script.."
-		wait(0.50)
-		script.Parent.Text = "Loading Script..."
-		wait(0.50)
+		script.Parent.Text = "Checking Game" -- 1
+		wait(1)
+		script.Parent.Text = "Checking Game." -- 2
+		wait(1)
+		script.Parent.Text = "Checking Game.." -- 3
+		wait(1)
+		script.Parent.Text = "Checking Game..." -- 4
+		wait(1)
+		script.Parent.Text = "Checking Game..." -- 5
+		wait(1)
+		script.Parent.Text = "Checking Game" -- 6
+		wait(1)
+		script.Parent.Text = "Checking Game." -- 7
+		wait(1)
+		script.Parent.Text = "Checking Game.." -- 8
+		wait(1)
+		script.Parent.Text = "Checking Game..." -- 9
+		wait(1)
+		script.Parent.Text = "Checking Game..." -- 10
+		wait(1)
+		script.Parent.Text = "Loading Script" -- 1
+		wait(1)
+		script.Parent.Text = "Loading Script." -- 2
+		wait(1)
+		script.Parent.Text = "Loading Script.." -- 3
+		wait(1)
+		script.Parent.Text = "Loading Script..." -- 4
+		wait(1)
+		script.Parent.Text = "Loading Script..." -- 5
+		wait(1)
+		script.Parent.Text = "Loading Script" -- 6
+		wait(1)
+		script.Parent.Text = "Loading Script." -- 7
+		wait(1)
+		script.Parent.Text = "Loading Script.." -- 8
+		wait(1)
+		script.Parent.Text = "Loading Script..." -- 9
+		wait(1)
+		script.Parent.Text = "Loading Script..." -- 10
+		wait(1)
 	end
 end
-coroutine.wrap(SOKOJNI_fake_script)()
-local function IDBMPM_fake_script() -- LoadingText.Visible 
-	local script = Instance.new('LocalScript', LoadingText)
+coroutine.wrap(QOMH_fake_script)()
+local function JNMLB_fake_script() -- LoadingAndCheckingGame.Visible 
+	local script = Instance.new('LocalScript', LoadingAndCheckingGame)
 
-	wait(10)
+	wait(20)
 	script.Parent.Visible=false
 end
-coroutine.wrap(IDBMPM_fake_script)()
+coroutine.wrap(JNMLB_fake_script)()
+local function PLIF_fake_script() -- LoadingAndCheckingGame.Checking Game... 
+	local script = Instance.new('LocalScript', LoadingAndCheckingGame)
+
+	wait(9)
+	local PlaceId = game.PlaceId
+	
+	if PlaceId == 4246487209 or PlaceId == 4246487209 then
+	
+	elseif PlaceId == 4104106043 then
+	
+	elseif PlaceId == 3623096087 then
+	
+	elseif PlaceId == 7993293100 then
+	
+	elseif PlaceId == 855499080  then
+	
+	elseif PlaceId == 2248408710 then
+	
+	elseif PlaceId == 537413528 then
+	
+	elseif PlaceId == 8750997647 then
+	
+	elseif PlaceId == 1962086868 then
+	
+	elseif PlaceId == 3582763398 then
+	
+	elseif PlaceId == 4954752502 then
+	
+	elseif PlaceId == 7211666966 then
+	
+	elseif PlaceId == 1224212277 then
+	
+	elseif PlaceId == 2788229376 then
+		game.Players.LocalPlayer:kick("Sorry DaHood Script Its Patched")
+	elseif PlaceId == 6953291455 then
+	
+	elseif PlaceId == 621129760 then
+	
+	elseif PlaceId == 5256165620 then
+	
+	else
+		game.Players.LocalPlayer:kick("Game Not Support!")
+		wait(1)
+	end
+end
+coroutine.wrap(PLIF_fake_script)()
