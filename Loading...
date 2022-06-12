@@ -55,27 +55,27 @@ LoadingAndCheckingGame.TextWrapped = true
 
 -- Scripts:
 
-local function MIUR_fake_script() -- LoadingFrame.Script Hub 
+local function TRRS_fake_script() -- LoadingFrame.Script Hub 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
-	wait(17)
+	wait(18)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Huubb/main/Script%20Huubb"))()
 end
-coroutine.wrap(MIUR_fake_script)()
-local function ICRBK_fake_script() -- LoadingFrame.Visible 
+coroutine.wrap(TRRS_fake_script)()
+local function HKILY_fake_script() -- LoadingFrame.Visible 
 	local script = Instance.new('LocalScript', LoadingFrame)
 
-	wait(20)
+	wait(22)
 	script.Parent.Visible=false
 end
-coroutine.wrap(ICRBK_fake_script)()
-local function KQDK_fake_script() -- Inside.LocalScript 
+coroutine.wrap(HKILY_fake_script)()
+local function RWHYK_fake_script() -- Inside.LocalScript 
 	local script = Instance.new('LocalScript', Inside)
 
-	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",20)
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",22)
 end
-coroutine.wrap(KQDK_fake_script)()
-local function QOMH_fake_script() -- LoadingAndCheckingGame.Checking And Loading Text 
+coroutine.wrap(RWHYK_fake_script)()
+local function PSJB_fake_script() -- LoadingAndCheckingGame.Checking And Loading Text 
 	local script = Instance.new('LocalScript', LoadingAndCheckingGame)
 
 	while true do
@@ -99,6 +99,8 @@ local function QOMH_fake_script() -- LoadingAndCheckingGame.Checking And Loading
 		wait(1)
 		script.Parent.Text = "Checking Game..." -- 10
 		wait(1)
+		script.Parent.Text = "Game Found!"
+		wait(2)
 		script.Parent.Text = "Loading Script" -- 1
 		wait(1)
 		script.Parent.Text = "Loading Script." -- 2
@@ -121,57 +123,59 @@ local function QOMH_fake_script() -- LoadingAndCheckingGame.Checking And Loading
 		wait(1)
 	end
 end
-coroutine.wrap(QOMH_fake_script)()
-local function JNMLB_fake_script() -- LoadingAndCheckingGame.Visible 
+coroutine.wrap(PSJB_fake_script)()
+local function THBEX_fake_script() -- LoadingAndCheckingGame.Visible 
 	local script = Instance.new('LocalScript', LoadingAndCheckingGame)
 
-	wait(20)
+	wait(22)
 	script.Parent.Visible=false
 end
-coroutine.wrap(JNMLB_fake_script)()
-local function PLIF_fake_script() -- LoadingAndCheckingGame.Checking Game... 
+coroutine.wrap(THBEX_fake_script)()
+local function AZHKJKZ_fake_script() -- LoadingAndCheckingGame.Checking Game... 
 	local script = Instance.new('LocalScript', LoadingAndCheckingGame)
 
 	wait(9)
 	local PlaceId = game.PlaceId
 	
 	if PlaceId == 4246487209 or PlaceId == 4246487209 then
-	
+		
 	elseif PlaceId == 4104106043 then
-	
+		
 	elseif PlaceId == 3623096087 then
-	
+		
 	elseif PlaceId == 7993293100 then
-	
+		
 	elseif PlaceId == 855499080  then
-	
+		
 	elseif PlaceId == 2248408710 then
-	
+		
 	elseif PlaceId == 537413528 then
-	
+		
 	elseif PlaceId == 8750997647 then
-	
+		
 	elseif PlaceId == 1962086868 then
-	
+		
 	elseif PlaceId == 3582763398 then
-	
+		
 	elseif PlaceId == 4954752502 then
-	
+		
 	elseif PlaceId == 7211666966 then
-	
+		
 	elseif PlaceId == 1224212277 then
-	
+		
 	elseif PlaceId == 2788229376 then
 		game.Players.LocalPlayer:kick("Sorry DaHood Script Its Patched")
 	elseif PlaceId == 6953291455 then
-	
+		
 	elseif PlaceId == 621129760 then
-	
+		
 	elseif PlaceId == 5256165620 then
-	
+		
+	elseif PlaceId == 8015075184 then
+		game.Players.LocalPlayer:kick("Dimension 2 - The Zenith Script Its Coming Soon")
 	else
 		game.Players.LocalPlayer:kick("Game Not Support!")
 		wait(1)
 	end
 end
-coroutine.wrap(PLIF_fake_script)()
+coroutine.wrap(AZHKJKZ_fake_script)()
