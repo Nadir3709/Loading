@@ -173,7 +173,9 @@ local function AZHKJKZ_fake_script() -- LoadingAndCheckingGame.Checking Game...
 		
 	elseif PlaceId == 8015075184 then
 		game.Players.LocalPlayer:kick("Dimension 2 - The Zenith Script Its Coming Soon")
-	else
+	elseif PlaceId == 13822889 then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Lumber-Tycoon-2/main/Pc%20Script"))()
+        else
 		game.Players.LocalPlayer:kick("Game Not Support!")
 		wait(1)
 	end
