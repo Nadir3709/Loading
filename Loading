@@ -138,44 +138,146 @@ local function AZHKJKZ_fake_script() -- LoadingAndCheckingGame.Checking Game...
 	local PlaceId = game.PlaceId
 	
 	if PlaceId == 4246487209 or PlaceId == 4246487209 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Boss Fighting Simulator";
+	Text = "Last Update 14/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 4104106043 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Insane Elevator";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 3623096087 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Muscle Legends";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 7993293100 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tsunami Game";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 855499080  then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Skywars";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 2248408710 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Destruction Simulator";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 537413528 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Build A Boat For Treasure";
+	Text = "Last Update 19/05/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 8750997647 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tapping Legends X";
+	Text = "Last Update 19/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 1962086868 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tower Of Hell";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 3582763398 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tower Of Hell";
+	Text = "Last Update 13/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 4954752502 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tower Of Misery";
+	Text = "Last Update 14/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 7211666966 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tower Of Jump";
+	Text = "Last Update 14/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 1224212277 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Mad City";
+	Text = "Last Update 05/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 2788229376 then
 		game.Players.LocalPlayer:kick("Sorry DaHood Script Its Patched")
 	elseif PlaceId == 6953291455 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Eating Simulator";
+	Text = "Last Update 14/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 621129760 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Knife Ability Test (KAT)";
+	Text = "Last Update 14/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 5256165620 then
-		
+		local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "3-2-1 Blast Off Simulator";
+	Text = "Last Update 14/06/2022";
+	Duration = 10;
+})
 	elseif PlaceId == 8015075184 then
 		game.Players.LocalPlayer:kick("Dimension 2 - The Zenith Script Its Coming Soon")
 	elseif PlaceId == 13822889 then
-               
-        else
+        local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Lumber Tycoon 2";
+	Text = "Last Update 19/06/2022";
+	Duration = 10;
+})
+    else
 		game.Players.LocalPlayer:kick("Game Not Support!")
 		wait(1)
 	end
