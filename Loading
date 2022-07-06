@@ -262,7 +262,15 @@ CoreGui:SetCore("SendNotification", {
 	Text = "Last Update 25/06/2022";
 	Duration = 10;
 })
-        else
+	elseif PlaceId == 9498006165 then
+        local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "Tapping Simulator ";
+	Text = "Last Update 06/07/2022";
+	Duration = 10;
+})
+    else
 		game.Players.LocalPlayer:kick("Game Not Support!")
 	end
 end
