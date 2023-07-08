@@ -121,18 +121,6 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         local Uncheck = Instance.new("ImageButton")
         local Check = Instance.new("ImageButton")
         
-        Uncheck.Name = "Uncheck"
-        Uncheck.Parent = Window
-        Uncheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        Uncheck.BackgroundTransparency = 1.000
-        Uncheck.BorderSizePixel = 0
-        Uncheck.Position = UDim2.new(0, 7, 0, 76)
-        Uncheck.Size = UDim2.new(0, 18, 0, 18)
-        Uncheck.ZIndex = 5
-        Uncheck.AutoButtonColor = false
-        Uncheck.Image = "http://www.roblox.com/asset/?id=6031094678"
-        Uncheck.ImageColor3 = Color3.fromRGB(50, 50, 50)
-        
         Check.Name = "Check"
         Check.Parent = Window
         Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
